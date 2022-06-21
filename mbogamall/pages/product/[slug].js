@@ -7,9 +7,9 @@ const ProductDetails = ({product, products}) => {
   const{name, price, details, image} = product;
   return (
     <div>
-      <div className="maylike-product-container">
+      <div>
         <div>
-          <div className="image-container">
+          <div>
           <img src={urlFor(image && image[0])} />
 
           </div>
