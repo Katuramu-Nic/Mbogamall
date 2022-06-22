@@ -7,9 +7,10 @@ const ProductDetails = ({product, products}) => {
   const{name, price, details, image} = product;
   return (
     <div>
-      <div>
+      
+      <div className="product-container">
         <div>
-          <div>
+          <div className="image-container">
           <img src={urlFor(image && image[0])} />
 
           </div>
