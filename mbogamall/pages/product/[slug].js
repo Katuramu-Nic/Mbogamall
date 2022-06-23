@@ -8,8 +8,8 @@ const ProductDetails = ({product, products}) => {
   return (
     <div>
       
-      <div className="product-container">
-        <div>
+      <div className="product-detail-container">
+        <div >
           <div className="image-container">
           <img src={urlFor(image && image[0])} />
 
@@ -23,7 +23,7 @@ const ProductDetails = ({product, products}) => {
 )) }
           </div>*/}
         </div>
-        <div className="product-details-desc" >
+        <div className="product-detail-desc" >
 <h1>{name}</h1>
 <div className="reviews">
   <div>
@@ -41,14 +41,14 @@ const ProductDetails = ({product, products}) => {
 <p>{details}</p>
 <p className="price">${price}</p>
 <div className="quanity">
-  <h3></h3>
-  <p className="quantity-desc" >
+  <h3>Quantity:</h3>
+  <p className="quantity-desc"> 
   <span className="minus" 
     onClick="" ><AiOutlineMinus /></span>
   <span className="num" 
     onClick="" >0</span>
     <span className="plus" 
-    onClick="" ><AiOutlinePlus /></span>
+    onClick=""><AiOutlinePlus /></span>
   </p>
 </div>
 <div className="buttons">
@@ -63,7 +63,7 @@ className="buy-now" onClick="">Buy Now</button>
 <div className="maylike-products-wrapper">
   <h2>You may also like</h2>
   <div className="marquee">
-<div className="maylike-product-container">
+<div className="maylike-products-container track">
 {products.map((item) =>(
   <Product key={item._id} product={item} />
 ))}
