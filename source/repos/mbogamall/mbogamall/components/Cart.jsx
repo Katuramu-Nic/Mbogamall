@@ -13,7 +13,7 @@ const Cart = () => {
     <div className="cart-wrapper"  ref={cartRef}>
     <div className="cart-container">
       <button type="button" 
-   className="cart-container" 
+   className="cart-heading" 
    onclick={() => setShowCart(false) } >
       <AiOutlineLeft />
       <span className="heading"> Your Cart </span>
@@ -25,12 +25,12 @@ const Cart = () => {
     <h3>Your cart is empty</h3>
     <Link href="/" >
     <button type="button"
-    onClick={() =>setShowCart(false) } 
+    onClick={() => setShowCart(false) } 
     className="btn">
     Continue Shopping
     </button>
     </Link>
-    </div>
+    </div>  
   )}
 <div className="product-container">
 {cartItems.length >= 1 && cartItems.map((item) =>(
